@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Taiba Fatima | Web Developer &amp; AI Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fc;--surf:#ffffff;--ink:#0d1530;--mute:#52607f;--line:#d9dff0;--a:#4f46e5;--b:#0891b2;--onA:#ffffff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#080d1a;--surf:#111a30;--ink:#eaf0ff;--mute:#9aa8c7;--line:#223055;--a:#7c8cff;--b:#35d0e8;--onA:#080d1a}}
+:root[data-theme="dark"]{--bg:#080d1a;--surf:#111a30;--ink:#eaf0ff;--mute:#9aa8c7;--line:#223055;--a:#7c8cff;--b:#35d0e8;--onA:#080d1a}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Sora,"Helvetica Neue",Arial,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--b);outline-offset:3px}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+.grad{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .w{display:flex;justify-content:space-between;align-items:center;height:64px;gap:12px}
+.logo{font:700 1.15rem Sora,sans-serif;text-decoration:none;letter-spacing:.02em}
+nav{display:flex;gap:20px;align-items:center;font-size:.92rem;font-weight:500}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;font:600 .95rem "DM Sans",sans-serif;padding:12px 22px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;background:linear-gradient(90deg,var(--a),var(--b));color:var(--onA)}
+.btn.o{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center;padding:64px 0 72px}
+.eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--b);font-weight:600;margin-bottom:14px}
+.hero h1{font-size:clamp(2.2rem,6vw,3.7rem);letter-spacing:-.02em}
+.hero p{color:var(--mute);font-size:1.08rem;max-width:50ch;margin:18px 0 26px}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.flow{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:22px}
+.flow small{font-size:.72rem;letter-spacing:.14em;color:var(--mute);font-weight:600}
+.nodes{display:flex;align-items:center;justify-content:space-between;margin:18px 0 6px;gap:6px}
+.node{flex:1;text-align:center;padding:14px 4px;border-radius:12px;border:1px solid var(--line);font:600 .9rem Sora,sans-serif}
+.node.ai{background:linear-gradient(135deg,var(--a),var(--b));color:var(--onA);border:0}
+.arr{color:var(--b);font-weight:700}
+.flow ol{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.flow li{display:flex;gap:10px;font-size:.92rem;color:var(--mute)}
+.flow li b{color:var(--b);font-family:Sora,sans-serif}
+section{padding:68px 0;border-top:1px solid var(--line)}
+.k{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--b);font-weight:600;margin-bottom:10px}
+h2{font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.01em}
+.sub{color:var(--mute);max-width:60ch;margin:12px 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p{margin:0;color:var(--mute);font-size:.95rem}
+.card .n{font:700 .85rem Sora,sans-serif;color:var(--b);display:block;margin-bottom:10px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:36px}
+.about p{color:var(--mute);margin:0 0 14px}
+.about p b{color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tag{border:1px solid var(--line);background:var(--surf);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:500}
+.facts{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:22px;align-self:start;display:grid;gap:12px}
+.facts div{display:flex;justify-content:space-between;gap:12px;font-size:.93rem;border-bottom:1px dashed var(--line);padding-bottom:10px}
+.facts div:last-child{border:0;padding:0}.facts span{color:var(--mute)}
+.proj{border-style:dashed}
+.badge{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--a);border:1px solid var(--a);border-radius:999px;padding:2px 10px;margin-bottom:12px}
+.tools h3{font-size:1rem;margin:0 0 10px}
+.vision{text-align:center}
+.vision h2{max-width:20ch;margin:0 auto 14px}
+.vision .sub{margin:0 auto 22px}
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:36px}
+.contact ul{padding-left:18px;color:var(--mute)}
+.contact a.l{display:block;margin-top:10px;color:var(--b);font-weight:600}
+form{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:22px;display:grid;gap:14px}
+label{display:grid;gap:5px;font-weight:600;font-size:.88rem}
+input,textarea{font:inherit;padding:11px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+textarea{min-height:110px;resize:vertical}
+.ok{min-height:1.3em;font-weight:600;color:var(--b);font-size:.92rem}
+footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--mute);font-size:.9rem}
+footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:780px){.hero,.about,.contact{grid-template-columns:1fr}nav a:not(.btn){display:none}.hero{padding-top:36px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.alt{background:var(--surf)}.alt .card,.alt .facts{background:var(--bg)}
+.big{font:700 clamp(3rem,8vw,4.5rem) Sora,sans-serif;line-height:1;margin-bottom:8px}
+.stmt{font:700 clamp(1.9rem,5vw,3.2rem) Sora,sans-serif;line-height:1.15;letter-spacing:-.01em;max-width:22ch}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+</style>
+</head>
+<body>
+<div class="bar"><div class="w">
+  <a class="logo" href="#home">TAIBA <span class="grad">FATIMA</span></a>
+  <nav aria-label="Main"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#web">Skills</a><a href="#method">Method</a><a href="#route">Projects</a><a href="#contact">Contact</a><a class="btn" href="#contact">Let’s Connect</a></nav>
+</div></div>
+
+<main id="home"><div class="w"><div class="hero">
+  <div><div class="eyebrow">01 / 15 · Portfolio</div>
+  <h1>Taiba Fatima. <span class="grad">Web Developer &amp; AI Engineer.</span></h1>
+  <p>From Layyah, Pakistan. 4 years of experience building websites and AI solutions, using machine learning, discrete math and systems thinking to solve real-world problems.</p>
+  <div class="cta"><a class="btn" href="#about">Explore My Work</a><a class="btn o" href="#contact">Contact Me</a></div></div>
+  <div class="flow" aria-label="Systems thinking concept"><small>SYSTEMS THINKING · CONCEPT</small>
+  <div class="nodes"><div class="node">Problem</div><span class="arr">→</span><div class="node ai">Model</div><span class="arr">→</span><div class="node">Solution</div></div>
+  <ol><li><b>01</b>Web development</li><li><b>02</b>AI &amp; machine learning</li><li><b>03</b>Discrete math &amp; systems thinking</li></ol></div>
+</div></div>
+<section id="about"><div class="w"><div class="k">02 / 15 · About me</div><h2>I solve real-world problems <span class="grad">by thinking in systems.</span></h2><p class=sub>I’m a web developer and AI engineer from Layyah, Pakistan. I use AI, machine learning and discrete mathematics to turn messy problems into clear solutions.</p><div class="tags"><span class="tag">Web Development</span><span class="tag">AI</span><span class="tag">Machine Learning</span><span class="tag">Python</span><span class="tag">Java</span><span class="tag">Discrete Math</span></div></div></section>
+<section id="glance" class=alt><div class="w"><div class="k">03 / 15 · At a glance</div><h2>Experience &amp; focus</h2><div class="grid"><div class="card"><div class="big grad">4</div><h3>years of experience</h3><p>Building websites and AI solutions.</p></div><div class="card"><div class="big grad">2</div><h3>core languages</h3><p>Python and Java.</p></div><div class="card"><div class="big grad">1</div><h3>method</h3><p>Systems thinking with discrete math.</p></div></div></div></section>
+<section id="expertise"><div class="w"><div class="k">04 / 15 · Expertise</div><h2>Areas of expertise</h2><p class=sub>Three areas that work together.</p><div class="grid"><div class="card"><h3>Web development &amp; AI</h3><p>Websites and web apps, with smart AI features.</p></div><div class="card"><h3>Python, Java &amp; ML</h3><p>Programming and models that learn from data.</p></div><div class="card"><h3>Systems thinking</h3><p>Discrete math to model real problems clearly.</p></div></div></div></section>
+<section id="web" class=alt><div class="w"><div class="k">05 / 15 · Web development</div><h2>Websites that work</h2><div class="grid"><div class="card"><h3>Websites</h3><p>Modern, responsive sites for individuals and businesses.</p></div><div class="card"><h3>Web apps</h3><p>Interactive tools built with HTML, CSS and JavaScript.</p></div><div class="card"><h3>AI features</h3><p>Chatbots and smart assistants added to websites.</p></div></div></div></section>
+<section id="ai"><div class="w"><div class="k">06 / 15 · AI engineering</div><h2>Intelligent solutions</h2><div class="grid"><div class="card"><h3>Chatbots</h3><p>Assistants that answer questions and guide people.</p></div><div class="card"><h3>Automation</h3><p>Tools that handle routine tasks automatically.</p></div><div class="card"><h3>LLM applications</h3><p>Apps powered by large language models.</p></div></div></div></section>
+<section id="ml" class=alt><div class="w"><div class="k">07 / 15 · Machine learning</div><h2>Models that learn from data</h2><div class="grid"><div class="card"><h3>Learn from data</h3><p>Models find patterns in past examples.</p></div><div class="card"><h3>Predict &amp; classify</h3><p>Forecast outcomes and sort information.</p></div><div class="card"><h3>Support decisions</h3><p>Turn results into clear next steps.</p></div></div></div></section>
+<section id="languages"><div class="w"><div class="k">08 / 15 · Languages</div><h2>Python &amp; Java</h2><div class="grid"><div class="card"><h3>Python</h3><p>Machine learning, data work and automation scripts.</p></div><div class="card"><h3>Java</h3><p>Structured, reliable applications and strong programming foundations.</p></div></div></div></section>
+<section id="discrete" class=alt><div class="w"><div class="k">09 / 15 · Systems thinking</div><h2>Discrete math is how I see systems</h2><div class="row"><div class="card"><h3>Graphs</h3><p>Map connections and routes.</p></div><div class="card"><h3>Logic</h3><p>Define clear rules.</p></div><div class="card"><h3>Sets</h3><p>Group and compare items.</p></div><div class="card"><h3>Combinatorics</h3><p>Count the possible options.</p></div></div></div></section>
+<section id="method"><div class="w"><div class="k">10 / 15 · Method</div><h2>How I solve problems</h2><div class="row"><div class="card"><h3>1. Understand</h3><p>Listen to the real problem and its limits.</p></div><div class="card"><h3>2. Model</h3><p>Turn it into a system with sets, graphs and logic.</p></div><div class="card"><h3>3. Build</h3><p>Create the solution with AI and test it.</p></div><div class="card"><h3>4. Improve</h3><p>Launch, learn from results and refine.</p></div></div></div></section>
+<section id="route" class=alt><div class="w"><div class="k">11 / 15 · Concept project</div><h2>Route &amp; schedule planner</h2><div class="grid"><div class="card"><h3>Problem</h3><p>Deliveries and timetables waste time when routes are guessed.</p></div><div class="card"><h3>System model</h3><p>Places become nodes and roads become edges in a graph.</p></div><div class="card"><h3>Solution</h3><p>Graph algorithms find short routes and fair schedules.</p></div></div></div></section>
+<section id="predict"><div class="w"><div class="k">12 / 15 · Concept project</div><h2>ML prediction tool</h2><div class="grid"><div class="card"><h3>Problem</h3><p>Small businesses struggle to plan stock and sales.</p></div><div class="card"><h3>System model</h3><p>Past sales data feeds a machine learning model.</p></div><div class="card"><h3>Solution</h3><p>The model predicts demand so they can plan ahead.</p></div></div></div></section>
+<section id="webapp" class=alt><div class="w"><div class="k">13 / 15 · Concept project</div><h2>AI-ready web app</h2><div class="grid"><div class="card"><h3>Problem</h3><p>Visitors leave when they can’t find answers quickly.</p></div><div class="card"><h3>System model</h3><p>Common questions and services are mapped into a clear structure.</p></div><div class="card"><h3>Solution</h3><p>A website with a built-in AI assistant that answers instantly.</p></div></div></div></section>
+<section id="vision"><div class="w"><div class="k">14 / 15 · Vision</div><h2>Passionate about <span class="grad">exploring business.</span></h2><p class=sub>I want to understand how businesses work and build web and AI solutions that make daily life and work simpler, starting in Layyah and reaching further.</p></div></section>
+<section id="contact" class="alt"><div class="w contact">
+  <div>
+    <div class="k">15 / 15 · Contact</div>
+    <h2>Let’s solve something <span class="grad">together.</span></h2>
+    <p class="sub">Have a problem, a project idea or a collaboration in mind? Reach out about:</p>
+    <ul><li>AI projects &amp; automation</li><li>Machine learning &amp; chatbot development</li><li>Problem solving with systems thinking</li><li>Web development &amp; business ideas</li></ul>
+    <a class="l" href="mailto:itaiba786being@gmail.com">itaiba786being@gmail.com</a>
+    <a class="l" href="https://github.com/itaiba786being_design" target="_blank" rel="noopener">GitHub: itaiba786being_design ↗</a>
+    <p style="margin-top:14px">Layyah, Pakistan</p>
+  </div>
+  <form id="f" novalidate>
+    <label>Name<input id="n" autocomplete="name"></label>
+    <label>Email<input id="e" type="email" autocomplete="email"></label>
+    <label>Subject<input id="s"></label>
+    <label>Message<textarea id="m"></textarea></label>
+    <button class="btn" type="submit">Send Message</button>
+    <div class="ok" id="ok" role="status" aria-live="polite"></div>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="w"><span>© 2026 Taiba Fatima. All rights reserved.</span><span>Web Developer | AI Engineer</span></div></footer>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+  e.preventDefault();
+  var g=function(i){return document.getElementById(i).value.trim()},ok=document.getElementById('ok');
+  if(!g('n')||!/^\S+@\S+\.\S+$/.test(g('e'))||!g('m')){ok.textContent='Please add your name, a valid email and a message.';return}
+  var u='mailto:itaiba786being@gmail.com?subject='+encodeURIComponent(g('s')||'Website enquiry')+'&body='+encodeURIComponent(g('m')+'\n\n'+g('n')+' ('+g('e')+')');
+  ok.textContent='Opening your email app…';
+  window.location.href=u;
+});
+</script>
+</body>
+</html>
